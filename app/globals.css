@@ -1,6 +1,12 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
+/* Explicit sources: on Vercel, automatic detection finds nothing and no utility class is generated. */
+@source '../app';
+@source '../components';
+@source '../hooks';
+@source '../lib';
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
